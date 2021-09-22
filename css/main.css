@@ -1,0 +1,177 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  font-family: 'Do Hyeon', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 95vh;
+}
+
+svg {
+  width: 100%;
+  max-width: 1000px;
+}
+
+#launch {
+  height: 100px;
+  width: 100px;
+  margin: 20px;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  border-radius: 100%;
+  cursor: pointer;
+  transition-duration: 0.2s;
+  position: relative;
+
+}
+
+#launch::after {
+  content: "";
+  width: 110%;
+  height: 110%;
+  border: solid red 5px;
+  border-radius: 100%;
+  position: absolute;
+  transition-duration: 1s;
+}
+
+.pressed {
+  transform: scale(0.8);
+}
+
+#stars {
+  opacity:0;
+}
+
+#launch:hover::after {
+  transform: scale(1.1);
+}
+
+
+
+.container {
+  color: rgb(218, 24, 24);
+  margin:rgb(255, 29, 13)uto;
+  text-align: center;
+}
+
+h1 {
+  font-weight: normal;
+  letter-spacing: .125rem;
+  text-transform: uppercase;
+}
+
+li {
+  display: inline-block;
+  font-size: 1em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+li span {
+  display: block;
+  font-size: 4.5rem;
+}
+
+.emoji {
+  display: none;
+  padding: 1rem;
+}
+
+#rocket{
+  z-index: 100000;
+}
+.emoji span {
+  font-size: 4rem;
+  padding: 0 .5rem;
+}
+
+@media all and (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  li {
+    font-size: 1.125rem;
+    padding: .75rem;
+  }
+  
+  li span {
+    font-size: 3.375rem;
+  }
+}
+
+
+.container {
+  color: #333;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-weight: normal;
+  letter-spacing: .125rem;
+  text-transform: uppercase;
+}
+
+li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+li span {
+  display: block;
+  font-size: 4.3rem5rem;
+}
+
+.emoji {
+  display: none;
+  padding: 1rem;
+}
+
+.emoji span {
+  font-size: 4rem;
+  padding: 0 .5rem;
+}
+#sputnik-main{
+  width: 2rem;
+  height: 2rem;
+  position:absolute;
+  transform: translate(0px, -150px);
+  display: none;
+  
+}
+.count{
+  height: 30rem;
+  width: 30rem;
+}
+@media all and (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  li {
+    font-size: 1.125rem;
+    padding: .75rem;
+  }
+  
+  li span {
+    font-size: 3.375rem;
+  }
+}
