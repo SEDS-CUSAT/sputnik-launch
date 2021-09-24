@@ -12,12 +12,16 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 95vh;
+  height: 100vh;
+  width:100vw;
+  background: #3498db;
+  background: linear-gradient(to top, #2ecc71, #3498db, #2c3e50);
+  color: rgb(255, 255, 255);
 }
 
 svg {
-  width: 100%;
-  max-width: 1000px;
+  width: 100vw;
+  /* max-width: 1000px; */
 }
 
 #launch {
@@ -69,7 +73,6 @@ svg {
 
 h1 {
   font-weight: normal;
-  letter-spacing: .125rem;
   text-transform: uppercase;
 }
 
@@ -84,6 +87,7 @@ li {
 li span {
   display: block;
   font-size: 1rem;
+  color: aliceblue;
 }
 
 .emoji {
@@ -99,11 +103,7 @@ li span {
   padding: 0 .5rem;
 }
 
-@media all and (max-width: 768px) {
-  h1 {
-    font-size: 1rem;
-  }
-  
+@media all and (max-width: 768px) {  
   li {
     font-size: 1rem;
     padding: .75rem;
@@ -143,6 +143,7 @@ li span {
 .emoji {
   display: none;
   padding: 1rem;
+  color: aliceblue;
 }
 
 .emoji span {
@@ -158,10 +159,38 @@ li span {
   
 }
 
-@media all and (max-width: 768px){
+@media (max-width: 650px){
+  #sputnik-main{
+    position:absolute;
+    transform: translate(0px, 100px);    
+  }
+}
+
+@media (max-width: 450px){
+  #sputnik-main{
+    position:absolute;
+    transform: translate(0px, 110px);    
+  }
+}
+
+@media (max-width: 400px){
   #sputnik-main{
     position:absolute;
     transform: translate(0px, 200px);    
+  }
+}
+
+@media (max-width: 350px){
+  #sputnik-main{
+    position:absolute;
+    transform: translate(0px, 145px);    
+  }
+}
+
+@media (max-width: 300px){
+  #sputnik-main{
+    position:absolute;
+    transform: translate(0px, 170px);    
   }
 }
 
@@ -175,9 +204,7 @@ li span {
   align-content: center;
 }
 @media all and (max-width: 768px) {
-  h1 {
-    font-size: 1rem;
-  }
+
   
   li {
     font-size: 1rem;
