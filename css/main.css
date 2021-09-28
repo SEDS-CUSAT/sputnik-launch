@@ -1,0 +1,223 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* * {
+  font-family: 'Do Hyeon', sans-serif;
+} */
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+body{
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+}
+
+.count{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.pic {
+  width: 100%;
+  height: 100vh;
+  /* max-width: 1000px; */
+}
+
+ul{
+  padding: 0;
+}
+
+@media (max-width: 665px) {
+   .pic{
+    width: 100%;
+    height: auto;
+    align-self: center;
+    justify-self: center;
+  }
+
+  #sputnik-main{
+   transform: translate(190px, -195px)!important;
+   width:2rem !important;
+   height: 2rem !important;
+  }
+
+} 
+
+#pic{
+  display: none;
+  width: 100%;
+  height: 100vh;
+}
+
+.heading h1,h2{
+    
+  font-family: 'Lato', sans-serif;
+  /* font-weight: 300;
+  font-size: 4rem; */
+  letter-spacing: 10px;
+  text-align: center;
+  justify-content: center;
+  margin-top: 0;
+  background: -webkit-linear-gradient(white, #38495a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#launch {
+  height: 100px;
+  width: 100px;
+  margin: 20px;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  border-radius: 100%;
+  cursor: pointer;
+  transition-duration: 0.2s;
+  position: relative;
+
+}
+
+#launch::after {
+  content: "";
+  width: 110%;
+  height: 110%;
+  border: solid red 5px;
+  border-radius: 100%;
+  position: absolute;
+  transition-duration: 1s;
+}
+
+.pressed {
+  transform: scale(0.8);
+}
+
+#stars {
+  opacity:0;
+}
+
+#launch:hover::after {
+  transform: scale(1.1);
+}
+
+
+
+/* .container {
+  text-align: center;
+  color: aliceblue;
+} */
+
+h1 {
+  font-weight: normal;
+  letter-spacing: .125rem;
+  text-transform: uppercase;
+}
+
+li {
+  display: inline-block;
+  font-size: 1em;
+  color: aliceblue;
+  background: -webkit-linear-gradient(white, #38495a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+li span {
+  display: block;
+  font-size: 4.5rem;
+}
+
+.emoji {
+  display: none;
+}
+
+#rocket{
+  z-index: 100000;
+}
+.emoji span {
+  font-size: 4rem;
+}
+
+@media all and (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  li {
+    font-size: 1.125rem;
+  }
+  
+  li span {
+    font-size: 3.375rem;
+  }
+}
+
+
+.container {
+  color: #333;
+  text-align: center;
+}
+
+h1 {
+  font-weight: normal;
+  letter-spacing: .125rem;
+  text-transform: uppercase;
+}
+
+li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+li span {
+  display: block;
+  font-size: 4.3rem;
+}
+
+.emoji {
+  display: none;
+}
+
+.emoji span {
+  font-size: 4rem;
+}
+#sputnik-main{
+  width: 5rem;
+  height: 5rem;
+  position:absolute;
+  transform: translate(50vw, -65vh);
+  /* transform: translate(50%, -50%); */
+  /* transform: translateX(+50vw);
+  transform: translateY(-50vh); */
+  display: none;
+  
+}
+@media all and (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  li {
+    font-size: 1.125rem;
+  }
+  
+  li span {
+    font-size: 3.375rem;
+  }
+}
